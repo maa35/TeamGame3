@@ -1,0 +1,20 @@
+# プロジェクトを作成するディレクトリに移動
+$ cd /path/to
+
+# 「# training」という文字列を「README.md」に記述
+$ echo "# training" >> README.md
+
+# 現在のディレクトリにローカルリポジトリを作成
+$ git init
+
+# 「README.md」をインデックスに登録
+$ git add README.md
+
+# コミットメッセージ「first commit」をつけてコミット
+$ git commit -m "first commit"
+
+# GitHubにあるリポジトリをリモートリポジトリとして設定
+$ git remote add origin https://github.com/（ここに自分のアカウント名）/（ここに自分のプロジェクト名）.git
+
+# GitHubにあるリモートリポジトリにプッシュ
+$ git push -u origin master
